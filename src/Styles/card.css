@@ -1,0 +1,58 @@
+section{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+}
+
+.cards{
+    width: 250px;
+    padding: 20px;
+    height: 450px;
+    border: 2px solid grey;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+.cards:hover{
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.image_box img{
+    width: 250px;
+    height: 300px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid grey;
+}
+
+.details p:nth-child(1){
+    font-weight: bold;
+}
+.details p:nth-child(2){
+    color: grey;
+    font-size: 0.8rem;
+}
+.details p:nth-child(3){
+    font-weight: bold;
+    color: grey;
+}
+
+.details button{
+    padding: 8px 10px;
+    margin: 10px 0px;
+    border:none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #feb376;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details button:hover{
+    background-color: orange;
+}
