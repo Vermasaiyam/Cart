@@ -1,32 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.empty{
+
+.empty {
     font-size: 22px;
-    padding: 10px ;
+    padding: 10px;
     color: red;
     font-family: cursive;
 }
+
 article {
     width: 60%;
     margin: auto;
 }
-.cart_box img{
+
+.cart_box img {
     width: 50px;
     height: 50px;
 }
-.cart_img{
+
+.cart_img {
     display: flex;
     width: 400px;
 }
 
-.cart_img p{
+.cart_img p {
     font-weight: bold;
     margin-left: 10px;
 }
 
-.cart_box{
+.cart_box {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +39,7 @@ article {
     padding-bottom: 5px;
 }
 
-.i{
+.i {
     background-color: orange;
     color: white;
     font-size: 20px;
@@ -46,7 +50,7 @@ article {
     border: none;
 }
 
-.button{
+.button {
     background-color: red;
     color: white;
     padding: 8px 10px;
@@ -57,19 +61,89 @@ article {
     border-radius: 10px;
 }
 
-.total{
+.total {
     display: flex;
     justify-content: space-between;
 }
-.total span:nth-child(1){
-color: orange;
-font-weight: bold;
-letter-spacing: 2px;
-font-size: 2rem;
+
+.total span:nth-child(1) {
+    color: orange;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 2rem;
 }
 
-.total span:nth-child(2){
+.total span:nth-child(2) {
     font-size: 2rem;
     color: red;
     font-weight: bold;
 }
+
+@media screen and (max-width: 1100px) {
+    article{
+        width: 80%;
+    }
+    .cart_img p {
+        font-size: 15px;
+    }
+    .i {
+        font-size: 15px;
+        padding: 6px 8px;
+        margin: 0px 7px;
+    }
+    .button {
+        padding: 7px 8px;
+        margin: 0px 10px;
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    article{
+        width: 90%;
+    }
+    .empty {
+        font-size: 18px;
+    }
+    .total span:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .total span:nth-child(2) {
+        font-size: 1.5rem;
+    }
+    .cart_img {
+        width: 300px;
+    }
+    .cart_box {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .empty {
+        font-size: 12px;
+    }
+    .total span:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .total span:nth-child(2) {
+        font-size: 1rem;
+    }
+    
+    .cart_img {
+        width: 180px;
+    }
+    
+    .cart_img p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .cart_img {
+        width: 150px;
+    }
+}
+

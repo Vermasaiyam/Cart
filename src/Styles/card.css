@@ -1,10 +1,16 @@
 section{
-    width: 80%;
+    width: 90vw;
     margin: auto;
     margin-top: 5%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
+    grid-template-rows: auto; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .cards{
@@ -55,4 +61,22 @@ section{
 
 .details button:hover{
     background-color: orange;
+}
+
+@media screen and (max-width: 600px) {
+    section{
+        gap: 15px;
+    }
+    .cards{
+        height: 300px;
+        width: 175px;
+    }
+    .image_box img{
+        width: 160px;
+        height: 170px;
+    }
+    .details button{
+        font-size: 10px;
+    }
+    
 }
