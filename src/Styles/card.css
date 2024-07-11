@@ -100,7 +100,7 @@ button:disabled{
 
 @media screen and (max-width: 600px) {
     .section{
-        gap: 15px;
+        gap: 8px;
     }
     .cards{
         height: 300px;
