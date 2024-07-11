@@ -48,6 +48,7 @@ article {
     margin: 0px 10px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .button {
