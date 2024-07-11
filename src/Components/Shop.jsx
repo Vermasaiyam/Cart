@@ -49,8 +49,8 @@ const Shop = ({handleClick}) => {
             </div>
 
             <div className='buttons'>
-                <button onClick={()=> handlePageClick(paginationState.currentPage - 1)} disabled={paginationState.currentPage === 1}>Previous</button>
-                <button onClick={()=> handlePageClick(paginationState.currentPage + 1)} disabled={endIndex >= list.length}>Next</button>
+                <button className='button' onClick={()=> handlePageClick(paginationState.currentPage - 1)} disabled={paginationState.currentPage === 1}>Previous</button>
+                <button className='button' onClick={()=> handlePageClick(paginationState.currentPage + 1)} disabled={endIndex >= list.length}>Next</button>
             </div>
 
         </section>
